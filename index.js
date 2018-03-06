@@ -20,23 +20,25 @@ function takeANumber(){
   return 'Welcome!. You are number ' + count + ' in line.';
 }
 
+var currentCustomer = 1;
 
+function nowServing(){
 
-
-
-
-
-
-
-function nowServing(katzDeliLine){
-
-  if(katzDeliLine.length === 0){ //checking if line empty
-    return "There is nobody waiting to be served!";
-  } else {
-  return "Currently serving " + katzDeliLine.shift()+ "."; // if not we return first element from beginning of array and shift it out
-  }
+  var beingServed = currentCustomer;
+  currentCustomer = currentCustomer + 1
+  return beingServed;
 
 }
+
+// function nowServing(katzDeliLine){
+//
+//   if(katzDeliLine.length === 0){ //checking if line empty
+//     return "There is nobody waiting to be served!";
+//   } else {
+//   return "Currently serving " + katzDeliLine.shift()+ "."; // if not we return first element from beginning of array and shift it out
+//   }
+//
+// }
 
 
 function currentLine(katzDeliLine){
