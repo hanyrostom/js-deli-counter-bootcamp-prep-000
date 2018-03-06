@@ -9,7 +9,7 @@ function takeANumber(katzDeliLine, name){
 
   var number = 1 + (katzDeliLine.indexOf(name));
   // (grabbing the index and because arrays and strings are zero indexed we add 1 to give customer actual number in que)
-  return 'Welcome, '+ name + '. You are number ' + number + ' in line.'
+  return 'Welcome, '+ name + '. You are number ' + number + ' in line.';
 }
 
 
